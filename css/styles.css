@@ -1,0 +1,221 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+/* ============= COMPONENTS ============= */
+.modal-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  /* color: #ffffff; */
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.social-links-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  color: #303030;
+}
+
+.social-links-link:hover,
+.social-links-link:focus {
+  color: var(--accent-color);
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle-light-theme {
+  color: #303030;
+}
+
+.suptitle-dark-theme {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  /* color: #9da4bd; */
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  /* color: #303030; */
+}
+/* ============= END COMPONENTS ============= */
+
+/* ============= HEADER ============= */
+.navigation-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  /* color: #ffffff; */
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+
+  /* color: #ffffff; */
+}
+/* ============= END HEADER ============= */
+
+/* ============= HERO ============= */
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  /* color: #ffffff; */
+}
+/* ============= END HERO ============= */
+
+/* ============= ABOUT ============= */
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  /* color: #555555; */
+}
+/* ============= END ABOUT ============= */
+
+/* ============= SERVICES ============= */
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============= END SERVICES ============= */
+
+/* ============= ADVANTAGES ============= */
+.advantages-list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-list-description {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+/* ============= END ADVANTAGES ============= */
+
+/* ============= MASTERS ============= */
+.masters-list-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ============= END MASTERS ============= */
+
+/* ============= GALLERY ============= */
+
+/* ============= END GALLERY ============= */
+
+/* ============= CONTACT FORM ============= */
+
+/* ============= END CONTACT FORM ============= */
+
+/* ============= CONTACT INFORMATION ============= */
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============= END CONTACT INFORMATION ============= */
+
+/* ============= FOOTER ============= */
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* ============= END FOOTER ============= */
