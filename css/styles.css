@@ -1,11 +1,35 @@
+/* calc(100% / кол-во_элементов_в_строке - значение_отступа) */
+
 :root {
   --main-font: "Open Sans", sans-serif;
   --secondary-font: "Raleway", sans-serif;
   --accent-color: #ff6c00;
+  --section-pt: 130px;
+  --section-pb: 130px;
 }
 
 body {
   font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -20,8 +44,31 @@ body {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* ============= COMPONENTS ============= */
 .modal-btn {
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -58,6 +105,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .suptitle-light-theme {
@@ -87,6 +135,34 @@ body {
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .navigation-link {
   font-weight: 600;
   font-size: 12px;
@@ -106,6 +182,8 @@ body {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
 
   /* color: #ffffff; */
 }
@@ -165,6 +243,34 @@ body {
 /* ============= END ADVANTAGES ============= */
 
 /* ============= MASTERS ============= */
+.masters {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  background-color: #f7f7f7;
+}
+
+.masters .title {
+  margin-bottom: 44px;
+}
+
+.masters-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  /* justify-content: space-between; */
+}
+
+.masters-list-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.masters-list-content-wrapper {
+  padding-top: 30px;
+}
+
 .masters-list-title {
   font-weight: 400;
   font-size: 18px;
@@ -172,6 +278,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .masters-list-position {
