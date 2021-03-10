@@ -563,16 +563,6 @@ img {
   margin-bottom: 30px;
 }
 
-a:hover,
-a:focus {
-  color: var(--accent-color);
-}
-
-a:hover svg,
-a:focus svg {
-  fill: var(--accent-color);
-}
-
 /* ============= END MASTERS ============= */
 
 /* ============= GALLERY ============= */
