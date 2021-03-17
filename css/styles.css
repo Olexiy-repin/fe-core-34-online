@@ -76,12 +76,17 @@ img {
   text-transform: uppercase;
   cursor: pointer;
   background-color: transparent;
-  color: #ffffff;
+  color: #303030;
+  transition: color 250ms linear, background-color 250ms linear;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.modal-btn-dark-theme {
   color: #ffffff;
 }
 
@@ -109,8 +114,8 @@ img {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
-
   color: #303030;
+  transition: color 250ms linear;
 }
 
 .social-links-link:hover,
@@ -198,6 +203,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  transition: background-color 250ms linear;
 }
 
 .social-list-link:hover,
@@ -213,12 +219,15 @@ img {
 .social-list-icon {
   width: 20px;
   height: 20px;
+  transition: fill 250ms linear;
 }
 
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -235,6 +244,13 @@ img {
 
 .logo {
   margin-right: 70px;
+}
+
+.logo:hover,
+.logo:focus {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
 }
 
 .logo-img {
@@ -256,8 +272,8 @@ img {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
-
-  /* color: #ffffff; */
+  transition: color 250ms linear;
+  color: #ffffff;
 }
 
 .navigation-link:hover,
@@ -272,8 +288,7 @@ img {
   letter-spacing: 0.1em;
   margin-left: auto;
   margin-right: 40px;
-
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 /* ============= END HEADER ============= */
 
@@ -287,7 +302,16 @@ img {
 }
 
 .hero-left-side {
+  display: flex;
+  align-items: flex-end;
   width: 100px;
+  padding-left: 26px;
+  padding-bottom: 40px;
+}
+
+.hero-left-side .social-links {
+  transform: rotate(-90deg);
+  transform-origin: left top;
 }
 
 .hero-right-side {
@@ -656,3 +680,42 @@ img {
   color: #9da4bd;
 }
 /* ============= END FOOTER ============= */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: all 250ms linear;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 580px;
+  background-color: #ffffff;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
