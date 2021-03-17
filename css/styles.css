@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.team-list-item {
+  text-align: center;
+}
+
+.team-list-content {
+  padding: 20px 30px;
+}
+
+.team-list-item-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  text-transform: uppercase;
+  line-height: 1.714;
+  margin-bottom: 8px;
+}
+
+.team-list-item-position {
+  font-family: "Roboto Slab", serif;
+  font-size: 13px;
+  color: rgb(85, 85, 85);
+  line-height: 1.846;
+}
