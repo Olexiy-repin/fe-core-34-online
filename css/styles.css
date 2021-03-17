@@ -59,3 +59,32 @@ img {
   color: rgb(85, 85, 85);
   line-height: 1.846;
 }
+
+.team-list-content-wrapper {
+  position: relative;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(255, 99, 71, 0.5);
+  color: #ffffff;
+  padding: 20px;
+  overflow: scroll;
+  transform: rotateY(90deg);
+  transform-origin: left top;
+  opacity: 0;
+
+  transition: transform 250ms linear, opacity 0ms linear 250ms;
+}
+
+.team-list-link-wrapper:hover .overlay,
+.team-list-link-wrapper:focus .overlay {
+  transform: rotateY(0deg);
+  opacity: 1;
+  transition: transform 250ms linear, opacity 0ms linear 0ms;
+}
