@@ -31,7 +31,7 @@
                         <a class="navigation-link link" href="">О нас</a>
                     </li>
                     <li class="navigation-item">
-                        <a class="navigation-link link" href="">Услуги и цены</a>
+                        <a class="navigation-link link" href="#services">Услуги и цены</a>
                     </li>
                     <li class="navigation-item">
                         <a class="navigation-link link" href="">Мастера</a>
@@ -101,7 +101,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <p class="suptitle suptitle-dark-theme">Проведи время в компании лучших мастеров</p>
                 <h2 class="title title-dark-theme">Услуги и цены</h2>
@@ -390,6 +390,32 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            <form action="#" class="modal-form" autocomplete="off">
+                <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input" required minlength="2">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-phone" class="modal-form-input" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="096-111-11-11">
+                        <span class="modal-form-icon"></span>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Сообщение
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input type="checkbox" id="user-term" name="user-term" class="modal-form-term visually-hidden">
+                <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю&nbsp;<a
+                        href="">Условия
+                        договора</a></label>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
