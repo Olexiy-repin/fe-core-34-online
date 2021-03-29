@@ -1,0 +1,82 @@
+.services {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  background-color: #111319;
+  background-image: url("../images/services/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services .title {
+  margin-bottom: 44px;
+}
+
+.services .modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.services-list-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  width: 50%;
+  padding: 30px 40px;
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+/* 
+  4n - 1
+  4 * 0 - 1 = -1;
+  4 * 1 - 1 = 3
+  4 * 2 - 1 = 7
+  
+  4n - 2
+  4 * 0 - 2 = -2;
+  4 * 1 - 2 = 2;
+  4 * 2 - 2 = 6;
+  
+  2,3,6,7,10,11
+  */
+
+.services-list:nth-child(4n - 1),
+.services-list:nth-child(4n - 2) {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+
+/* .services-list:nth-child(even) {
+    background-image: linear-gradient(
+      180deg,
+      #090b13 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  } */
+
+.services-list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}

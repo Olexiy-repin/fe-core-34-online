@@ -1,0 +1,34 @@
+.contact-information {
+  width: 50%;
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+  padding-left: 100px;
+}
+
+.contact-information .address {
+  margin-bottom: 70px;
+}
+
+.contact-information .title {
+  margin-bottom: 44px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}

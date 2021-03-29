@@ -1,0 +1,45 @@
+.hero .container {
+  display: flex;
+}
+
+.hero .description {
+  max-width: 400px;
+}
+
+.hero-left-side {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  padding-left: 26px;
+  padding-bottom: 40px;
+}
+
+.hero-left-side .social-links {
+  transform: rotate(-90deg);
+  transform-origin: left top;
+}
+
+.hero-right-side {
+  flex-grow: 1;
+  padding-left: 100px;
+  padding-top: 272px;
+  padding-bottom: 206px;
+  background-color: #303030;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}

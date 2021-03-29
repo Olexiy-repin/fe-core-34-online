@@ -1,0 +1,112 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms linear;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  margin-top: 4px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: teal;
+  transition: background-color 250ms linear;
+
+  .modal-form-input:focus + & {
+    background-color: var(--accent-color);
+  }
+}
+
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  transition: border-color 250ms linear;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    text-transform: uppercase;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.modal-form-check-desc {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    outline: 1px solid #000000;
+    cursor: pointer;
+    margin-right: 8px;
+
+    .modal-form-term:checked + & {
+      background-color: var(--accent-color);
+      border: 4px solid #ffffff;
+    }
+
+    .modal-form-term:focus + & {
+      box-shadow: 0 0 0 2px blue;
+    }
+  }
+}
+
+.modal-form-btn {
+  min-width: 160px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  align-self: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  color: #303030;
+  transition: color 250ms linear, background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
+}

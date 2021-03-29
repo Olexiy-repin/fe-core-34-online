@@ -1,0 +1,18 @@
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}

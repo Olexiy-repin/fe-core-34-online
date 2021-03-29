@@ -1,0 +1,39 @@
+.about {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.about .title {
+  margin-bottom: 20px;
+}
+
+.about .description {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-left-side {
+  margin-right: 64px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-text {
+  max-width: 476px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
+}

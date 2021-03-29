@@ -1,0 +1,148 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: #ff6c00;
+  --section-pt: 130px;
+  --section-pb: 130px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.logo:hover,
+.logo:focus {
+  animation-name: pulse;
+  animation-duration: 1000ms;
+  animation-iteration-count: 2;
+}
+
+.logo-img {
+  width: 68px;
+  height: 54px;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  transition: color 250ms linear;
+  color: #ffffff;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+
+.tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  margin-left: auto;
+  margin-right: 40px;
+  color: #ffffff;
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/*# sourceMappingURL=portfolio.css.map */
