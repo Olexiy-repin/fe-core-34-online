@@ -3,18 +3,16 @@
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
   padding-left: 100px;
+
+  .address {
+    margin-bottom: 70px;
+  }
 }
 
-.contact-information .address {
-  margin-bottom: 70px;
-}
-
-.contact-information .title {
-  margin-bottom: 44px;
-}
-
-.contact-list-item:not(:last-child) {
-  margin-bottom: 20px;
+.contact-list-item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-list-link {

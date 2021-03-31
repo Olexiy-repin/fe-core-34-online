@@ -4,6 +4,17 @@
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
+
+  .about &,
+  .advantages & {
+    margin-bottom: 20px;
+  }
+
+  .contact-information &,
+  .masters &,
+  .services & {
+    margin-bottom: 44px;
+  }
 }
 
 .title-light-theme {

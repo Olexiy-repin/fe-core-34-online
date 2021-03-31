@@ -61,11 +61,16 @@ img {
   padding-right: 15px;
 }
 
-.header {
-  position: absolute;
-  width: 100%;
-  padding-top: 32px;
-  padding-bottom: 32px;
+.about .container,
+.advantages .container,
+.hero .container {
+  display: flex;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .container {
@@ -73,25 +78,43 @@ img {
   align-items: center;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .logo {
   margin-right: 70px;
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover, .logo:focus {
   animation-name: pulse;
   animation-duration: 1000ms;
   animation-iteration-count: 2;
 }
 
+.logo_theme_light {
+  color: #000000;
+}
+
+.logo_theme_dark {
+  color: #ffffff;
+}
+
+.logo_theme_lightnees {
+  color: #eee8e8;
+}
+
 .logo-img {
   width: 68px;
   height: 54px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 .navigation-list {
@@ -112,8 +135,7 @@ img {
   color: #ffffff;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-link:hover, .navigation-link:focus {
   color: var(--accent-color);
 }
 
@@ -130,12 +152,6 @@ img {
 .footer {
   padding-top: 56px;
   padding-bottom: 56px;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .copyright {

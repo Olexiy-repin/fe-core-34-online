@@ -3,4 +3,21 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  .about &,
+  .advantages &,
+  .hero & {
+    display: flex;
+  }
+
+  .footer & {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header & {
+    display: flex;
+    align-items: center;
+  }
 }

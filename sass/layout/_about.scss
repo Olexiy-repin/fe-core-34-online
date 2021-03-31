@@ -3,19 +3,6 @@
   padding-bottom: var(--section-pb);
 }
 
-.about .title {
-  margin-bottom: 20px;
-}
-
-.about .description {
-  max-width: 400px;
-  margin-bottom: 20px;
-}
-
-.about .container {
-  display: flex;
-}
-
 .about-left-side {
   margin-right: 64px;
 }
@@ -24,8 +11,10 @@
   display: flex;
 }
 
-.about-list-item:not(:last-child) {
-  margin-right: 30px;
+.about-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about-text {

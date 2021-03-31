@@ -3,18 +3,6 @@
   padding-bottom: var(--section-pb);
 }
 
-.advantages .title {
-  margin-bottom: 20px;
-}
-
-.advantages .description {
-  max-width: 460px;
-}
-
-.advantages .container {
-  display: flex;
-}
-
 .advantages-left-side {
   margin-right: 30px;
 }
@@ -25,10 +13,9 @@
 }
 
 .advantages-list {
+  @extend %flex-container;
   width: 370px;
-  display: flex;
   align-items: flex-start;
-  flex-wrap: wrap;
   margin: 0 auto;
 }
 
@@ -37,14 +24,14 @@
   min-height: 133px;
   background-color: #f7f7f7;
   padding: 20px;
-}
 
-.advantages-list-item:not(:nth-child(even)) {
-  margin-right: 30px;
-}
+  &:not(:nth-child(even)) {
+    margin-right: 30px;
+  }
 
-.advantages-list-item:nth-child(even) {
-  margin-top: 30px;
+  &:nth-child(even) {
+    margin-top: 30px;
+  }
 }
 
 .advantages-list-count {
