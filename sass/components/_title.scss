@@ -1,19 +1,13 @@
 .title {
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.05em;
 
-  .about &,
-  .advantages & {
+  .about & {
     margin-bottom: 20px;
-  }
-
-  .contact-information &,
-  .masters &,
-  .services & {
-    margin-bottom: 44px;
+    max-width: 310px;
   }
 }
 
@@ -24,3 +18,41 @@
 .title-dark-theme {
   color: #ffffff;
 }
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 42px;
+    line-height: 1.17;
+
+    .about & {
+      max-width: unset;
+    }
+  }
+}
+
+// .title {
+//   font-family: var(--secondary-font);
+//   font-weight: 700;
+//   font-size: 42px;
+//   line-height: 1.17;
+//   letter-spacing: 0.05em;
+
+//   .about &,
+//   .advantages & {
+//     margin-bottom: 20px;
+//   }
+
+//   .contact-information &,
+//   .masters &,
+//   .services & {
+//     margin-bottom: 44px;
+//   }
+// }
+
+// .title-light-theme {
+//   color: #303030;
+// }
+
+// .title-dark-theme {
+//   color: #ffffff;
+// }

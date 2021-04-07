@@ -11,7 +11,7 @@
 ```html
 <body>
   <!-- Ставим перед закрывающим тегом body -->
-  <script src="./js/menu.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 ```
 

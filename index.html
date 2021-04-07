@@ -41,14 +41,40 @@
                     </li>
                 </ul>
             </nav>
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger"></use>
+                </svg>
+            </button>
             <a class="tel-link link" href="tel:+380441111111">+38 044 111 11 11</a>
             <button class="modal-btn modal-btn-dark-theme" type="button" data-modal-open>онлайн-запись</button>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="mobile-menu-close-btn" data-menu-close>
+                <svg class="mobile-menu-close-icon">
+                    <use href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-list list">
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">О нас</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">Услуги и цены</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">Мастера</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="" class="mobile-menu-link link">Контакты</a>
+                </li>
+            </ul>
         </div>
     </header>
 
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container">
                 <div class="hero-left-side">
                     <ul class="social-links list">
@@ -68,19 +94,43 @@
                         вкусом.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- ABOUT -->
         <section class="about">
             <div class="container">
                 <div class="about-left-side">
                     <ul class="about-list list">
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about/about-img-1.jpg"
-                                alt="мастер бреет бороду клиенту" width="270" height="445">
+                            <picture>
+                                <source
+                                    srcset="./images/about/about-img-1-desktop.webp 1x, ./images/about/about-img-1-desktop@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-1-desktop.jpg 1x, ./images/about/about-img-1-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/about/about-img-1-tablet.webp 1x, ./images/about/about-img-1-tablet@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-1-tablet.jpg 1x, ./images/about/about-img-1-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img class="about-list-img" src="./images/about/about-img-1-tablet.jpg"
+                                    alt="мастер бреет бороду клиенту">
+                            </picture>
+
                         </li>
                         <li class="about-list-item">
-                            <img class="about-list-img" src="./images/about/about-img-2.jpg"
-                                alt="мастер стрижет клиента" width="270" height="445">
+                            <picture>
+                                <source
+                                    srcset="./images/about/about-img-2-desktop.jpg 1x, ./images/about/about-img-2-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source
+                                    srcset="./images/about/about-img-2-tablet.jpg 1x, ./images/about/about-img-2-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <img class="about-list-img" src="./images/about/about-img-2-tablet.jpg"
+                                    alt="мастер стрижет клиента">
+                            </picture>
+
                         </li>
                     </ul>
                 </div>
@@ -101,7 +151,7 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="services" id="services">
+        <!-- <section class="services" id="services">
             <div class="container">
                 <p class="suptitle suptitle-dark-theme">Проведи время в компании лучших мастеров</p>
                 <h2 class="title title-dark-theme">Услуги и цены</h2>
@@ -153,10 +203,10 @@
 
                 <button class="modal-btn modal-btn-dark-theme" type="button">онлайн-запись</button>
             </div>
-        </section>
+        </section> -->
 
         <!-- ADVANTAGES -->
-        <section class="advantages">
+        <!-- <section class="advantages">
             <div class="container advantages__container">
                 <div class="advantages-left-side">
                     <ul class="advantages-list list">
@@ -187,10 +237,10 @@
                         прочитать. </p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- MASTERS -->
-        <section class="masters">
+        <!-- <section class="masters">
             <div class="container">
                 <p class="suptitle suptitle-light-theme">для настоящих ценителей атмосферы</p>
                 <h2 class="title title-light-theme">Наши мастера</h2>
@@ -313,10 +363,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- GALLERY -->
-        <section class="gallery">
+        <!-- <section class="gallery">
             <div class="container">
                 <h2 class="visually-hidden">Галерея работ</h2>
                 <p class="suptitle suptitle-light-theme">На латинском языке “барба” означает “борода”</p>
@@ -339,16 +389,16 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
-        <div class="contact-wrapper">
-            <!-- CONTACT FORM -->
-            <section class="contact-form-section">
+        <!-- <div class="contact-wrapper"> -->
+        <!-- CONTACT FORM -->
+        <!-- <section class="contact-form-section">
                 <h2 class="title">Онлайн-запись</h2>
-            </section>
+            </section> -->
 
-            <!-- CONTACT INFORMATION -->
-            <section class="contact-information">
+        <!-- CONTACT INFORMATION -->
+        <!-- <section class="contact-information">
                 <h2 class="title">Контакты</h2>
                 <address class="address">
                     <ul class="contact-list list">
@@ -370,10 +420,10 @@
                 </address>
                 <p class="suptitle">время работы</p>
                 <p class="contact-date">Ежедневно с 9:00 до 22:00</p>
-            </section>
-        </div>
+            </section> -->
+        <!-- </div> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <p class="copyright" lang="en">&copy; Copyright 2020</p>
             <ul class="social-links list">
@@ -385,9 +435,9 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>X</button>
             <form action="#" class="modal-form" autocomplete="off">
@@ -417,9 +467,10 @@
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
         </div>
-    </div>
+    </div> -->
 
-    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>

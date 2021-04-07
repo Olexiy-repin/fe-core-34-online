@@ -23,8 +23,20 @@
     display: block;
     margin: 0 auto;
   }
+
+  .header & {
+    display: none;
+  }
 }
 
 .modal-btn-dark-theme {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-btn {
+    .header & {
+      display: block;
+    }
+  }
 }
