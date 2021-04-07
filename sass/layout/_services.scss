@@ -34,10 +34,18 @@
 
 .services-list-item {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    margin: 0 6px;
   }
 }
 
@@ -48,4 +56,8 @@
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.services-list-name {
+  order: -1;
 }
